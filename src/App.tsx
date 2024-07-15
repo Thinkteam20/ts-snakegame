@@ -1,18 +1,13 @@
-// https://www.youtube.com/watch?v=a_O65S-Uh4c
-
 import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import AppleLogo from './applePixels.png';
 import Monitor from './oldMonitor.png';
 import useInterval from './UseInterval';
 
-// width, height of Canvas
 const canvasX = 1000
 const canvasY = 1000
-// starting point of snake
 const initialSnake = [[4, 10], [4, 10]]
 const initialApple = [14, 10]
-// scale up the board up and down.
 const scale = 50
 const timeDelay = 100
 
@@ -27,7 +22,6 @@ function App() {
 
   useInterval(() => runGame(), delay);
 
-  // loop over everything for me if there's a change. 
   useEffect(()=>{
     let fruit = document.getElementById('fruit') as HTMLCanvasElement; 
     if(canvasRef.current) {
@@ -51,7 +45,6 @@ function App() {
   }
 
   function play(){
-    // kind of reset fn 
     setSnake(initialSnake);
     setApple(initialApple);
     setDirection([1, 0]);
@@ -59,7 +52,6 @@ function App() {
     setScore(0);
     setGameOver(false);
   }
-  // check Collision
   function checkCollision(head: number[]){
     for(let i = 0; i < head.length; i++){
       if(head[i] < 0 || head[i] * scale >= canvasX) return true;
@@ -113,7 +105,6 @@ function App() {
     setSnake(newSnake); 
   }
 
-  // console.log(canvasRef);
   return (
     <div onKeyDown={(e)=> changeDirection(e)}>
       <img id='fruit' src={AppleLogo} alt="fruit" width="30" />
