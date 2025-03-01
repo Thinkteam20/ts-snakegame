@@ -1,33 +1,38 @@
-# TS snake game
+# TS Snake Game 🐍
 
-TS snake game
+A modern, TypeScript-powered classic Snake game with sleek design and responsive gameplay.
 
-<a href="https://ibb.co/1Tgf5Nt"><img src="https://i.ibb.co/CQc5Zy3/Screenshot-2024-06-20-at-10-41-33.png" alt="Screenshot-2024-06-20-at-10-41-33" border="0"></a>
+## 🎮 Project Overview
 
-## About the Project
+This TypeScript Snake Game brings a nostalgic arcade experience to web browsers, featuring smooth animations and intuitive controls.
 
-## Demo
+## 🚀 Features
 
-If applicable, include a link to a live demo or a screenshot/gif showcasing your project in action.
+- Responsive game design
+- TypeScript implementation
+- Smooth snake movement
+- Score tracking
+- Responsive controls
 
-## Getting Started
+## 🖥️ Demo
 
-Instructions on setting up and running the project locally.
+![Snake Game Screenshot](https://i.ibb.co/CQc5Zy3/Screenshot-2024-06-20-at-10-41-33.png)
+
+## 🛠 Tech Stack
+
+- TypeScript
+- HTML5 Canvas
+- npm
+
+## 🔧 Getting Started
 
 ### Prerequisites
 
-- Node.js version 16 (Recommended)
-- npm package manager
+- Node.js (v16+)
+- npm
 
-### Installation
+### Quick Setup
 
 1. Clone the repository
-   ```sh
+   ```bash
    git clone https://github.com/Thinkteam20/ts-snakegame.git
-2. Move to directory
-    ```sh
-    npm install
-3. run application on local server.
-     ```sh
-     npm start
-
